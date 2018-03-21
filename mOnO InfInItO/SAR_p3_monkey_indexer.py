@@ -32,8 +32,12 @@ def main(filename, resultname):
                     listatemp.append(elemento)
             if(te):
                 listatemp.append(tuple((1,finaltext[i+1])))
-            hashtable[finaltext[i]][1] = sorted(listatemp, key=lambda x: x[0], reverse = True)            
+            hashtable[finaltext[i]][1] = listatemp
+            
+            #hashtable[finaltext[i]][1] = sorted(listatemp, reverse = True)            
         
+        for key in hashtable.keys():
+            hashtable[key][1] = sorted(hashtable[key][1], reverse = True)
         save_object(hashtable, resultname)
                 
     
@@ -43,7 +47,7 @@ def save_object(object, file_name):
         pickle.dump(object, fh)
 
 def syntax():
-    print ("\n%s filename.txt resultfile.txt\n" % sys.argv[0])
+    print ("\n%s filename.txt resultfile\n" % sys.argv[0])
     sys.exit()
     
 if __name__ == '__main__':
