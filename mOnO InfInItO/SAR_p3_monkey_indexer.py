@@ -46,6 +46,7 @@ def main(filename, resultname):
         
 #        for key in hashtable.keys():
 #            hashtable[key][1] = sorted(hashtable[key][1], reverse = True)
+        
         save_object(hashtable, resultname)
                 
     

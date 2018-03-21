@@ -5,8 +5,8 @@ import random
 
 def main(filename):
     diccionario = load_object(filename)
-      
-    for j in range(1,10):
+    count = 0
+    while count < 10:
         frase = ""
         lastelement = "$"
         for i in range(1,25):
@@ -15,10 +15,13 @@ def main(filename):
             randomvalue = random.randint(0, diccionario[lastelement][0] - 1)
             for element in lista:
                 elegirpalabra+= [element[1]] * element[0]
+            
             lastelement = elegirpalabra[randomvalue]
             if lastelement == "$":
                 break
             frase += lastelement + " "
+        if frase.strip():
+            count+=1
         print(frase)
         
         
