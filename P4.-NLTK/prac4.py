@@ -76,9 +76,11 @@ print(sorted(tokensraw))
 #3 Eliminar del texto los símbolos siguientes
 failedtokens = set(['¡','!', '"', "'", '(', ')', ',','-','.',':',';','¿','?',']','«','»'])
 tokensfiltered = tokensraw - failedtokens
-print(sorted(tokensfiltered))
 
 #4
+print(sorted(tokensfiltered))
+
+#5
 from nltk.tokenize import word_tokenize
 predata = quijoteraw
 for simbolo in failedtokens:
@@ -87,4 +89,6 @@ postdata = word_tokenize(predata)
 postdataf = set(postdata)
 print(len(postdata), len(postdataf))
 print(sorted(postdataf)[:10], sorted(postdataf)[-10:])
+
+
         
