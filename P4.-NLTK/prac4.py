@@ -63,4 +63,12 @@ print(lista)
 #Ejercicio 33
 
 #1 Carga el documento "quijote.txt" en una única cadena
-quijote = wordslist.words('quijote.txt')
+quijoteraw = open('quijote.txt').read()
+
+#2 Mostrar todos los símbolos del documento filtrado ordenados por orden alfabético
+from nltk.tokenize.simple import CharTokenizer
+tokenizer = CharTokenizer()
+tokensraw = set(tokenizer.tokenize(quijoteraw.lower()))
+tokensraw.remove('\n')
+tokensraw.remove(' ')
+print(sorted(tokensraw))
