@@ -9,6 +9,10 @@ def remove_stopwords(text, language = 'english'):
 def formattedprint(listaimp):
     stringl = " ".join(map(str,listaimp))
     print(stringl)
+
+def printfreq(listaimp):
+    freqtoprint = FreqDist(listaimp)
+    print(freqtoprint.most_common(20))
 #Ejercicio 1
 
 #1 Acceder al corpus en castellano cess_esp
@@ -100,8 +104,7 @@ formattedprint(sorted(postdataf)[:10])
 formattedprint(sorted(postdataf)[-10:])
 
 #6
-frecuenciaf = FreqDist(postdata)
-print(frecuenciaf.most_common(20))
+printfreq(postdata)
 
 #7
 nonstopwords = remove_stopwords(postdata, 'spanish')
@@ -114,8 +117,7 @@ formattedprint(sorted(set(nonstopwords))[:10])
 formattedprint(sorted(set(nonstopwords))[-10:])
 
 #9
-frecuenciaf = FreqDist(nonstopwords)
-print(frecuenciaf.most_common(20))
+printfreq(nonstopwords)
 
 #10
 from nltk.stem import SnowballStemmer as snow
@@ -130,3 +132,6 @@ with open("quijotestemmed.txt", "w") as wr:
 print(len(stemmedtext), len(set(stemmedtext)))
 print(sorted(set(stemmedtext))[:10])
 print(sorted(set(stemmedtext))[-10:])
+
+#12
+printfreq(stemmedtext)
