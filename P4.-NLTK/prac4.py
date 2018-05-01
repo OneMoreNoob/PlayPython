@@ -34,5 +34,11 @@ print("Freq aparición de la preposición a:", fdist['a'])
 #8 Obtener el número de palabras que sólo aparecen una vez en el primer fichero del corpus.
 print("Número de palabras que aparecen una sóla vez:" ,len(fdist.hapaxes()))
 
-##9 Obtener la palabra más frecuente del primer fichero del corpus.
+#9 Obtener la palabra más frecuente del primer fichero del corpus.
 print("La palabra más frecuente es:", fdist.max())
+
+#10 Cargar los ficheros de PoliformaT ("spam.txt","quijote.txt" y "tirantloblanc.txt") como un corpus propio.
+from nltk.corpus import PlaintextCorpusReader
+corpus_root=r"./"
+wordslist = PlaintextCorpusReader(corpus_root, ['spam.txt','quijote.txt', 'tirantloblanc.txt'])
+print(wordslist.fileids())
