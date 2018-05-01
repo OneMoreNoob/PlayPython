@@ -21,7 +21,8 @@ print(fdist.most_common(20))
 
 #5 Obtener el vocabulario del primer fichero del corpus (ordenado por frecuencia)
 #vocxfrec= sorted([(b,a) for a,b in sorted([(y,x) for x,y in fdist.keys()])])
-vocxfrec = sorted([key for key in sorted([(value, key) for key,value in fdist.most_common()])])
+#vocxfrec = sorted([key for key in sorted([(value, key) for key,value in fdist.most_common()])])
+vocxfrec = [key for (key,value) in fdist.most_common()]
 print(vocxfrec)
 
 #6 Obtener de forma ordenada las palabras del vocabulario de longitud mayor que 7 y que aparezcan más de 2 veces en el primer fichero del corpus.
@@ -68,7 +69,11 @@ quijoteraw = open('quijote.txt').read()
 #2 Mostrar todos los símbolos del documento filtrado ordenados por orden alfabético
 from nltk.tokenize.simple import CharTokenizer
 tokenizer = CharTokenizer()
-tokensraw = set(tokenizer.tokenize(quijoteraw.lower()))
+tokensraw = set(tokenizer.tokenize(quijoteraw))
 tokensraw.remove('\n')
 tokensraw.remove(' ')
 print(sorted(tokensraw))
+
+#3 Eliminar del texto los símbolos siguientes
+tokensfiltered = tokensraw - set(['¡','!', '"', "'", '(', ')', ',','-','.',':',';','¿','?',']','«','»'])
+print(sorted(tokensfiltered))
