@@ -30,3 +30,6 @@ print([key for key,value in fdist.most_common() if (len(key) > 7) and (value > 2
 #7 Obtener la frecuencia de aparición de las palabras en el primer fichero del corpus. Además, y para el mismo fichero obtener la frecuencia de la palabra 'a'.
 print(sorted(fdist.values(), reverse = True))
 print("Freq aparición de la preposición a:", fdist['a'])
+
+#8 Obtener el número de palabras que sólo aparecen una vez en el primer fichero del corpus.
+print("Número de palabras que aparecen una sóla vez:" ,len(fdist.hapaxes()))
