@@ -41,4 +41,9 @@ print("La palabra más frecuente es:", fdist.max())
 from nltk.corpus import PlaintextCorpusReader
 corpus_root=r"./"
 wordslist = PlaintextCorpusReader(corpus_root, ['spam.txt','quijote.txt', 'tirantloblanc.txt'])
-print(wordslist.fileids())
+
+#11 Calcular el número de palabras, el número de palabras distintas y el número de frases de los tres documentos
+for doc in wordslist.fileids():
+    print(doc,len(wordslist.words(doc)),len(set(wordslist.words(doc))), len(wordslist.sents(doc)))
+    
+#12 ¿Coinciden estos resultados con los de la práctica de "Cuenta palabras"? Justifica la respuesta.
