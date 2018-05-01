@@ -131,8 +131,8 @@ with open("quijotestemmed.txt", "w") as wr:
 
 #11 Obtener el número de palabras y el número de palabras distintas del nuevo documento. Mostrar la 10 primeras y las 10 últimas en orden alfabético
 print(len(stemmedtext), len(set(stemmedtext)))
-print(sorted(set(stemmedtext))[:10])
-print(sorted(set(stemmedtext))[-10:])
+formattedprint(sorted(set(stemmedtext))[:10])
+formattedprint(sorted(set(stemmedtext))[-10:])
 
 #12 Obtener las frecuencias de aparición de los ítems que componen el nuevo documento. Visualizar los primeros 20 ítems.
 printfreq(stemmedtext)
