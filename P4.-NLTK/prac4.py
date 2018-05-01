@@ -103,23 +103,24 @@ print(len(postdata), len(postdataf))
 formattedprint(sorted(postdataf)[:10])
 formattedprint(sorted(postdataf)[-10:])
 
-#6
+#6 Obtener las frecuencias de aparición de los ítems que componen el documento filtrado. Un ítem es un par (key, value) donde key es la palabra y value es la frecuencia de aparición de la palabra.Visualizar los primeros 20 ítems.
+
 printfreq(postdata)
 
-#7
+#7 Crear un nuevo documento eliminando las stopwords del texto filtrado.
 nonstopwords = remove_stopwords(postdata, 'spanish')
 with open("quijotefiltered.txt", "w") as wr:
     wr.write(" ".join(map(str,nonstopwords)))
 
-#8
+#8 Obtener el número de palabras y el número de palabras distintas del texto sin stopwords. Mostrar la 10 primeras y las 10 últimas en orden alfabético
 print(len(nonstopwords), len(set(nonstopwords)))
 formattedprint(sorted(set(nonstopwords))[:10])
 formattedprint(sorted(set(nonstopwords))[-10:])
 
-#9
+#9 Obtener las frecuencias de aparición de los ítems que componen el documento sin stopwords. Visualizar los primeros 20 ítems.
 printfreq(nonstopwords)
 
-#10
+#10 Crear un nuevo documento sustituyendo cada palabra del texto sin stopwords por su raíz. Para ello se utilizará el stemmer snowball.
 from nltk.stem import SnowballStemmer as snow
 stem = snow('spanish')
 stemmedtext = []
@@ -128,10 +129,10 @@ for stemo in nonstopwords:
 with open("quijotestemmed.txt", "w") as wr:
     wr.write(" ".join(map(str,stemmedtext)))
 
-#11
+#11 Obtener el número de palabras y el número de palabras distintas del nuevo documento. Mostrar la 10 primeras y las 10 últimas en orden alfabético
 print(len(stemmedtext), len(set(stemmedtext)))
 print(sorted(set(stemmedtext))[:10])
 print(sorted(set(stemmedtext))[-10:])
 
-#12
+#12 Obtener las frecuencias de aparición de los ítems que componen el nuevo documento. Visualizar los primeros 20 ítems.
 printfreq(stemmedtext)
