@@ -41,9 +41,23 @@ print("La palabra más frecuente es:", fdist.max())
 from nltk.corpus import PlaintextCorpusReader
 corpus_root=r"./"
 wordslist = PlaintextCorpusReader(corpus_root, ['spam.txt','quijote.txt', 'tirantloblanc.txt'])
-
+4
 #11 Calcular el número de palabras, el número de palabras distintas y el número de frases de los tres documentos
 for doc in wordslist.fileids():
     print(doc,len(wordslist.words(doc)),len(set(wordslist.words(doc))), len(wordslist.sents(doc)))
     
 #12 ¿Coinciden estos resultados con los de la práctica de "Cuenta palabras"? Justifica la respuesta.
+
+#Ejercicio 2
+
+#1 Escribe un programa en Python para calcular cuántas veces aparecen las palabras what, when, where, who y why en cada una de las categorías del corpus Brown como un diccionario donde para cada palabra tengamos la lista de categorías y la frecuencia de aparición
+from nltk.corpus import brown
+words = ['what','when','where','who','why']
+lista = {'what':[], 'when':[], 'where':[], 'who':[], 'why':[]}
+for cat in brown.categories():
+    palabras = brown.words(categories = cat)
+    for word in words:
+        lista[word].extend([cat, palabras.count(word)])
+print(lista)
+
+    
