@@ -72,7 +72,7 @@ for cat in brown.categories():
         lista[word].extend([cat, palabras.count(word)])
 print(lista)
 
-#Ejercicio 33
+#Ejercicio 3
 
 #1 Carga el documento "quijote.txt" en una única cadena
 quijoteraw = open('quijote.txt').read()
@@ -89,10 +89,10 @@ formattedprint(sorted(tokensraw))
 failedtokens = set(['¡','!', '"', "'", '(', ')', ',','-','.',':',';','¿','?',']','«','»'])
 tokensfiltered = tokensraw - failedtokens
 
-#4
+#4 Mostrar todos los símbolos del documento filtrado ordenados por orden alfabético
 formattedprint(sorted(tokensfiltered))
 
-#5
+#5 Obtener el número de palabras y el número de palabras distintas del texto filtrado. Mostrar las 10 primeras y las 10 últimas en orden alfabético 
 from nltk.tokenize import word_tokenize
 predata = quijoteraw
 for simbolo in failedtokens:
