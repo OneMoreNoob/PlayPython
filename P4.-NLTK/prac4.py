@@ -26,3 +26,7 @@ print(vocxfrec)
 
 #6 Obtener de forma ordenada las palabras del vocabulario de longitud mayor que 7 y que aparezcan más de 2 veces en el primer fichero del corpus.
 print([key for key,value in fdist.most_common() if (len(key) > 7) and (value > 2)])
+
+#7 Obtener la frecuencia de aparición de las palabras en el primer fichero del corpus. Además, y para el mismo fichero obtener la frecuencia de la palabra 'a'.
+print(sorted(fdist.values(), reverse = True))
+print("Freq aparición de la preposición a:", fdist['a'])
