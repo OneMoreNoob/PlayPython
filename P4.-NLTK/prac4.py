@@ -33,3 +33,6 @@ print("Freq aparición de la preposición a:", fdist['a'])
 
 #8 Obtener el número de palabras que sólo aparecen una vez en el primer fichero del corpus.
 print("Número de palabras que aparecen una sóla vez:" ,len(fdist.hapaxes()))
+
+##9 Obtener la palabra más frecuente del primer fichero del corpus.
+print("La palabra más frecuente es:", fdist.max())
