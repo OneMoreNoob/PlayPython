@@ -1,6 +1,11 @@
 import nltk
 from nltk.probability import *
 
+def remove_stopwords(text, language = 'english'):
+    stopwords = nltk.corpus.stopwords.words(language)
+    result = [w for w in text if w.lower() not in stopwords]
+    return result
+
 #Ejercicio 1
 
 #1 Acceder al corpus en castellano cess_esp
@@ -44,7 +49,7 @@ corpus_root=r"./"
 wordslist = PlaintextCorpusReader(corpus_root, ['spam.txt','quijote.txt', 'tirantloblanc.txt'])
 4
 #11 Calcular el número de palabras, el número de palabras distintas y el número de frases de los tres documentos
-for doc in wordslist.fileids():
+for doc in sorted(wordslist.fileids()):
     print(doc,len(wordslist.words(doc)),len(set(wordslist.words(doc))), len(wordslist.sents(doc)))
     
 #12 ¿Coinciden estos resultados con los de la práctica de "Cuenta palabras"? Justifica la respuesta.
@@ -88,10 +93,15 @@ for simbolo in failedtokens:
 postdata = word_tokenize(predata)
 postdataf = set(postdata)
 print(len(postdata), len(postdataf))
-print(sorted(postdataf)[:10], sorted(postdataf)[-10:])
+print(sorted(postdataf)[:10])
+print(sorted(postdataf)[-10:])
 
 #6
-textof = '\n'.join(map(str, list(postdataf)))
 frecuenciaf = FreqDist(postdata)
 print(frecuenciaf.most_common(20))
-        
+
+#7
+nonstopwords = remove_stopwords(postdata, 'spanish')
+print(len(nonstopwords), len(set(nonstopwords)))
+print(sorted(set(nonstopwords))[:10])
+print(sorted(set(nonstopwords))[-10:])
