@@ -53,11 +53,10 @@ for doc in wordslist.fileids():
 
 #1 Escribe un programa en Python para calcular cuántas veces aparecen las palabras what, when, where, who y why en cada una de las categorías del corpus Brown como un diccionario donde para cada palabra tengamos la lista de categorías y la frecuencia de aparición
 from nltk.corpus import brown
-words = ['what','when','where','who','why']
 lista = {'what':[], 'when':[], 'where':[], 'who':[], 'why':[]}
 for cat in brown.categories():
     palabras = brown.words(categories = cat)
-    for word in words:
+    for word in lista.keys():
         lista[word].extend([cat, palabras.count(word)])
 print(lista)
 
@@ -75,5 +74,17 @@ tokensraw.remove(' ')
 print(sorted(tokensraw))
 
 #3 Eliminar del texto los símbolos siguientes
-tokensfiltered = tokensraw - set(['¡','!', '"', "'", '(', ')', ',','-','.',':',';','¿','?',']','«','»'])
+failedtokens = set(['¡','!', '"', "'", '(', ')', ',','-','.',':',';','¿','?',']','«','»'])
+tokensfiltered = tokensraw - failedtokens
 print(sorted(tokensfiltered))
+
+#4
+from nltk.tokenize import word_tokenize
+predata = quijoteraw
+for simbolo in failedtokens:
+    predata = predata.replace(simbolo, "")
+postdata = word_tokenize(predata)
+postdataf = set(postdata)
+print(len(postdata), len(postdataf))
+print(sorted(postdataf)[:10], sorted(postdataf)[-10:])
+        
