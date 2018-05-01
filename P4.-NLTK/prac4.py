@@ -60,4 +60,7 @@ for cat in brown.categories():
         lista[word].extend([cat, palabras.count(word)])
 print(lista)
 
-    
+#Ejercicio 33
+
+#1 Carga el documento "quijote.txt" en una única cadena
+quijote = wordslist.words('quijote.txt')
