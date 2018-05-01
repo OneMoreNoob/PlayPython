@@ -6,6 +6,9 @@ def remove_stopwords(text, language = 'english'):
     result = [w for w in text if w.lower() not in stopwords]
     return result
 
+def formattedprint(listaimp):
+    stringl = " ".join(map(str,listaimp))
+    print(stringl)
 #Ejercicio 1
 
 #1 Acceder al corpus en castellano cess_esp
@@ -76,14 +79,14 @@ tokenizer = CharTokenizer()
 tokensraw = set(tokenizer.tokenize(quijoteraw))
 tokensraw.remove('\n')
 tokensraw.remove(' ')
-print(sorted(tokensraw))
+formattedprint(sorted(tokensraw))
 
 #3 Eliminar del texto los símbolos siguientes
 failedtokens = set(['¡','!', '"', "'", '(', ')', ',','-','.',':',';','¿','?',']','«','»'])
 tokensfiltered = tokensraw - failedtokens
 
 #4
-print(sorted(tokensfiltered))
+formattedprint(sorted(tokensfiltered))
 
 #5
 from nltk.tokenize import word_tokenize
@@ -93,8 +96,8 @@ for simbolo in failedtokens:
 postdata = word_tokenize(predata)
 postdataf = set(postdata)
 print(len(postdata), len(postdataf))
-print(sorted(postdataf)[:10])
-print(sorted(postdataf)[-10:])
+formattedprint(sorted(postdataf)[:10])
+formattedprint(sorted(postdataf)[-10:])
 
 #6
 frecuenciaf = FreqDist(postdata)
@@ -102,6 +105,28 @@ print(frecuenciaf.most_common(20))
 
 #7
 nonstopwords = remove_stopwords(postdata, 'spanish')
+with open("quijotefiltered.txt", "w") as wr:
+    wr.write(" ".join(map(str,nonstopwords)))
+
+#8
 print(len(nonstopwords), len(set(nonstopwords)))
-print(sorted(set(nonstopwords))[:10])
-print(sorted(set(nonstopwords))[-10:])
+formattedprint(sorted(set(nonstopwords))[:10])
+formattedprint(sorted(set(nonstopwords))[-10:])
+
+#9
+frecuenciaf = FreqDist(nonstopwords)
+print(frecuenciaf.most_common(20))
+
+#10
+from nltk.stem import SnowballStemmer as snow
+stem = snow('spanish')
+stemmedtext = []
+for stemo in nonstopwords:
+    stemmedtext.append(stem.stem(stemo))
+with open("quijotestemmed.txt", "w") as wr:
+    wr.write(" ".join(map(str,stemmedtext)))
+
+#11
+print(len(stemmedtext), len(set(stemmedtext)))
+print(sorted(set(stemmedtext))[:10])
+print(sorted(set(stemmedtext))[-10:])
