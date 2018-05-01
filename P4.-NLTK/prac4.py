@@ -90,5 +90,8 @@ postdataf = set(postdata)
 print(len(postdata), len(postdataf))
 print(sorted(postdataf)[:10], sorted(postdataf)[-10:])
 
-
+#6
+textof = '\n'.join(map(str, list(postdataf)))
+frecuenciaf = FreqDist(postdata)
+print(frecuenciaf.most_common(20))
         
