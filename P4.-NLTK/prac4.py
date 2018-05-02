@@ -60,6 +60,8 @@ for doc in sorted(wordslist.fileids()):
     print(doc,len(wordslist.words(doc)),len(set(wordslist.words(doc))), len(wordslist.sents(doc)))
     
 #12 ¿Coinciden estos resultados con los de la práctica de "Cuenta palabras"? Justifica la respuesta.
+# No coinciden, en esta practica son mayores. Seguramente por la limpieza del texto que hacemos en la otra practica
+# con la funcion clean_text que se hacia antes de trabajar con el texto.
 
 #Ejercicio 2
 
@@ -136,3 +138,15 @@ formattedprint(sorted(set(stemmedtext))[-10:])
 
 #12 Obtener las frecuencias de aparición de los ítems que componen el nuevo documento. Visualizar los primeros 20 ítems.
 printfreq(stemmedtext)
+
+#13. Justifica los resultados obtenidos en los pasos 5, 8 y 11
+    # 5. Es el que mas palabras tiene porque no eliminamos los stopwords ni utilizamos otras tecnicas como lematizacion. Solo eliminamos ciertos simbolos.
+    # 8. Aqui el numero de palabras disminuye porque esta vez si eliminamos los stopwords. 
+    # En estos dos pasos, 5 y 8, observamos que las 10 primeras palabras empiezan en mayusculas y las 10 últimas con tilde ya que en nuestro vocabulario
+    # existen palabras con mayusculas y tildes, y las mayusculas van primero en orden alfabético y las tildes las ultimas.
+    
+    # 11. En este caso es el que menos tiene porque quitamos las stopwords y hacemos lematizacion (stemming) con el stemmer snowball que hace que
+    # disminuya el numero de palabras porque eliminamos palabras que difieren solo en sus derivaciones. Tambien cambian las primeras y ultimas 
+    # palabras porque ya no trabajamos con las palabras originales sino con su version lematizada que hace desaparecer las letras con tildes 
+    # y las mayusculas siendo los nuevos mas apropiados exepto por la ultima palabra que al comenzar con ñ en el orden ascii va despues de la z.
+    
