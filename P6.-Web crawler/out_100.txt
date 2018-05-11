@@ -1,0 +1,145 @@
+(0) Getting "http://www.upv.es" ... ok!
+(1) Getting "http://universidadypatrimonio.net" ... ok!
+(2) Getting "http://www.upv.es/plano/plano-2d-en.html" ... ok!
+(3) Getting "http://www.upv.es/otros/como-llegar-upv/index-en.html" ... ok!
+(4) Getting "http://www.vlc-campus.com/" ... ERROR: HTTPConnectionPool(host='www.vlc-campus.com', port=80): Read timed out. (read timeout=1)
+(5) Getting "http://www.upv.es/otros/como-llegar-upv/campus-gandia/index-en.html" ... ok!
+(6) Getting "http://www.vlc-campus.com/" ... ok!
+(7) Getting "http://www.nectarestudio.com" ... ok!
+(8) Getting "https://www.nectarestudio.com/proyectos/intrasenze/" ... ok!
+(9) Getting "http://www.intrasenze.com/" ... ERROR: HTTPConnectionPool(host='www.intrasenze.com', port=80): Read timed out. (read timeout=1)
+(10) Getting "https://www.nectarestudio.com/en/projects/intrasenze/" ... ok!
+(11) Getting "http://www.intrasenze.com/" ... ERROR: HTTPConnectionPool(host='www.intrasenze.com', port=80): Read timed out. (read timeout=1)
+(12) Getting "https://www.nectarestudio.com/en/contact/" ... ok!
+(13) Getting "https://www.nectarestudio.com/en/terms-and-conditions/" ... ok!
+(14) Getting "https://www.nectarestudio.com/terminos-y-condiciones/" ... ok!
+(15) Getting "https://www.linkedin.com/company-beta/2741692/" ... ok!
+(16) Getting "https://www.linkedin.com/notifications/" ... ok!
+(17) Getting "https://www.linkedin.com/messaging/" ... ok!
+(18) Getting "https://www.linkedin.com/jobs/" ... ok!
+(19) Getting "https://www.linkedin.com/mynetwork/" ... ok!
+(20) Getting "https://www.linkedin.com/feed/" ... ok!
+(21) Getting "https://www.instagram.com/nectarestudio/" ... ok!
+(22) Getting "https://twitter.com/nectarestudio" ... ok!
+(23) Getting "http://support.twitter.com/articles/14226-how-to-find-your-twitter-short-code-or-long-code" ... ok!
+(24) Getting "https://help.twitter.com/ru/using-twitter/twitter-sms" ... ok!
+(25) Getting "https://help.twitter.com/ru.html" ... ok!
+(26) Getting "https://help.twitter.com/hi" ... ok!
+(27) Getting "https://help.twitter.com/hi.html" ... ok!
+(28) Getting "https://business.twitter.com/hi/help.html" ... ok!
+(29) Getting "http://status.twitter.com/" ... ok!
+(30) Getting "https://status.twitterstat.us/pages/564314ae3309c22c3b0002fa/rss" ... ok!
+(31) Getting "http://status.twitter.com/pages/history/564314ae3309c22c3b0002fa" ... ok!
+(32) Getting "http://status.twitter.com/pages/564314ae3309c22c3b0002fa" ... ok!
+(33) Getting "http://www.twitter.com" ... ok!
+(34) Getting "http://www.twitter.com/settings/personalization" ... ok!
+(35) Getting "http://www.twitter.com/settings/your_twitter_data" ... ok!
+(36) Getting "http://www.twitter.com/personalization" ... ok!
+(37) Getting "http://www.twitter.com/i/moments" ... ERROR: HTTPSConnectionPool(host='twitter.com', port=443): Read timed out. (read timeout=1)
+(38) Getting "http://www.twitter.com/" ... ok!
+(39) Getting "http://www.twitter.com/i/directory/profiles" ... ok!
+(40) Getting "http://www.twitter.com/i/directory/profiles/29215a8185a1ce94a530cb5df92fc073" ... ok!
+(41) Getting "http://www.twitter.com/i/directory/profiles/27c87c595407ef3ae9198551f5266672" ... ok!
+(42) Getting "http://www.twitter.com/i/directory/profiles/72d0ed7ab0442ac6145e31b09defa316" ... ok!
+(43) Getting "http://www.twitter.com/itsazzaleaa" ... ok!
+(44) Getting "http://www.twitter.com/AleiahMann" ... ok!
+(45) Getting "http://www.twitter.com/foreignslum/status/993346681767976960" ... ok!
+(46) Getting "http://www.twitter.com/bahirasmithh" ... ok!
+(47) Getting "http://www.twitter.com/JannaDbunny/status/989475592486567937" ... ok!
+(48) Getting "http://www.twitter.com/LittleMissMid/status/989495078140854272" ... ok!
+(49) Getting "http://www.twitter.com/despairprincex/status/988205461085261825" ... ok!
+(50) Getting "http://www.twitter.com/BluVexen" ... ok!
+(51) Getting "https://t.co/ZObJOAXNBX" ... ok!
+(52) Getting "https://t.co/BluVexen/status/992410366545203200" ... ok!
+(53) Getting "https://t.co/Benji_The_Fox/status/992390940856848385" ... ok!
+(54) Getting "https://t.co/BluVexen/status/992294603217821701" ... ok!
+(55) Getting "https://t.co/Kiwi_Foxx/status/992294519382069258" ... ok!
+(56) Getting "https://t.co/BluVexen/status/992294290482069504" ... ok!
+(57) Getting "https://t.co/Kiwi_Foxx/status/992293808845897728" ... ok!
+(58) Getting "https://t.co/RayFolf" ... ok!
+(59) Getting "https://t.co/WhiskeytheCat5" ... ok!
+(60) Getting "https://t.co/FakeWolfaDraggy" ... ok!
+(61) Getting "https://t.co/VexenTheFox" ... ok!
+(62) Getting "https://t.co/Benji_The_Fox" ... ok!
+(63) Getting "https://t.co/SkylarRipa" ... ok!
+(64) Getting "https://t.co/SidikiWolf" ... ok!
+(65) Getting "https://t.co/RadzikArt" ... ok!
+(66) Getting "https://t.co/Nicole08798258" ... ok!
+(67) Getting "https://t.co/Kiwi_Foxx" ... ok!
+(68) Getting "https://t.co/BluVexen/status/992293381412827138" ... ok!
+(69) Getting "https://t.co/privacy" ... ok!
+(70) Getting "https://twitter.com/en/privacy/previous" ... ok!
+(71) Getting "https://twitter.com/en/privacy/previous/version_1" ... ok!
+(72) Getting "https://twitter.com/en/tos" ... ok!
+(73) Getting "https://support.twitter.com/forms/general" ... ok!
+(74) Getting "https://marketing-staging.twitter.com/na/en/collections.html" ... ok!
+(75) Getting "https://marketing-dev.twitter.com/na/en/solutions.html" ... ok!
+(76) Getting "https://marketing-dev.twitter.com/na/en/success-stories.html" ... ok!
+(77) Getting "https://marketing-dev.twitter.com/na/en/insights.html" ... ok!
+(78) Getting "https://help.twitter.com/en/safety-and_security" ... ok!
+(79) Getting "https://help.twitter.com/hi/404" ... ok!
+(80) Getting "https://help.twitter.com/ru/404" ... ok!
+(81) Getting "https://help.twitter.com/id/404" ... ok!
+(82) Getting "https://help.twitter.com/id.html" ... ok!
+(83) Getting "https://help.twitter.com/id/using-twitter/twitter-lite" ... ERROR: HTTPSConnectionPool(host='help.twitter.com', port=443): Read timed out. (read timeout=1)
+(84) Getting "https://help.twitter.com/id/using-twitter/advanced-twitter-mute-options" ... ERROR: HTTPSConnectionPool(host='help.twitter.com', port=443): Read timed out. (read timeout=1)
+(85) Getting "https://help.twitter.com/id/safety-and-security/control-your-twitter-experience" ... ok!
+(86) Getting "https://help.twitter.com/he/safety-and-security/control-your-twitter-experience" ... ok!
+(87) Getting "https://help.twitter.com/he.html" ... ok!
+(88) Getting "https://help.twitter.com/en/using-twitter/twitter-lite" ... ok!
+(89) Getting "https://help.twitter.com/id/using-twitter/twitter-lite" ... ok!
+(90) Getting "https://help.twitter.com/in/using-twitter/direct-message-faqs" ... ok!
+(91) Getting "https://help.twitter.com/hi/using-twitter/direct-message-faqs" ... ok!
+(92) Getting "https://help.twitter.com/hi/safety-and-security/twitter-location-services-for-mobile" ... ok!
+(93) Getting "https://help.twitter.com/ru/safety-and-security/twitter-location-services-for-mobile" ... ERROR: HTTPSConnectionPool(host='help.twitter.com', port=443): Read timed out. (read timeout=1)
+(94) Getting "https://help.twitter.com/id/safety-and-security/twitter-location-services-for-mobile" ... ERROR: HTTPSConnectionPool(host='help.twitter.com', port=443): Read timed out. (read timeout=1)
+(95) Getting "https://help.twitter.com/nl/safety-and-security/twitter-location-services-for-mobile" ... ERROR: HTTPSConnectionPool(host='help.twitter.com', port=443): Read timed out. (read timeout=1)
+(96) Getting "https://help.twitter.com/ar/safety-and-security/twitter-location-services-for-mobile" ... ok!
+(97) Getting "https://help.twitter.com/ru/safety-and-security/twitter-location-services-for-mobile" ... ok!
+(98) Getting "https://help.twitter.com/ru/using-twitter/tweet-location" ... ok!
+(99) Getting "https://help.twitter.com/id/using-twitter/tweet-location" ... ERROR: HTTPSConnectionPool(host='help.twitter.com', port=443): Read timed out. (read timeout=1)
+
+====
+INFO
+====
+Number of tokens: 9316
+Number of processed urls: 90
+Number of pending urls: 1242
+--------------------------------------------------
+'valencia' is in: http://universidadypatrimonio.net, http://www.nectarestudio.com, http://www.upv.es/otros/como-llegar-upv/index-en.html, http://www.vlc-campus.com/, https://twitter.com/nectarestudio, https://www.nectarestudio.com/en/contact/, https://www.nectarestudio.com/en/terms-and-conditions/, https://www.nectarestudio.com/terminos-y-condiciones/
+'upv' is in: http://universidadypatrimonio.net, http://www.upv.es, http://www.upv.es/otros/como-llegar-upv/campus-gandia/index-en.html, http://www.upv.es/otros/como-llegar-upv/index-en.html, http://www.upv.es/plano/plano-2d-en.html, http://www.vlc-campus.com/
+'google' is in: http://support.twitter.com/articles/14226-how-to-find-your-twitter-short-code-or-long-code, http://www.nectarestudio.com, http://www.upv.es, http://www.upv.es/otros/como-llegar-upv/campus-gandia/index-en.html, http://www.upv.es/otros/como-llegar-upv/index-en.html, https://help.twitter.com/ar/safety-and-security/twitter-location-services-for-mobile, https://help.twitter.com/en/safety-and_security, https://help.twitter.com/en/using-twitter/twitter-lite, https://help.twitter.com/he.html, https://help.twitter.com/he/safety-and-security/control-your-twitter-experience, https://help.twitter.com/hi, https://help.twitter.com/hi.html, https://help.twitter.com/hi/404, https://help.twitter.com/hi/safety-and-security/twitter-location-services-for-mobile, https://help.twitter.com/hi/using-twitter/direct-message-faqs, https://help.twitter.com/id.html, https://help.twitter.com/id/404, https://help.twitter.com/id/safety-and-security/control-your-twitter-experience, https://help.twitter.com/id/using-twitter/twitter-lite, https://help.twitter.com/in/using-twitter/direct-message-faqs, https://help.twitter.com/ru.html, https://help.twitter.com/ru/404, https://help.twitter.com/ru/safety-and-security/twitter-location-services-for-mobile, https://help.twitter.com/ru/using-twitter/tweet-location, https://help.twitter.com/ru/using-twitter/twitter-sms, https://support.twitter.com/forms/general, https://t.co/privacy, https://twitter.com/en/privacy/previous, https://twitter.com/en/privacy/previous/version_1, https://twitter.com/en/tos, https://twitter.com/nectarestudio, https://www.nectarestudio.com/en/contact/, https://www.nectarestudio.com/en/projects/intrasenze/, https://www.nectarestudio.com/en/terms-and-conditions/, https://www.nectarestudio.com/proyectos/intrasenze/, https://www.nectarestudio.com/terminos-y-condiciones/
+'informática' is not indexed
+'momento' is in: http://www.twitter.com, http://www.twitter.com/, http://www.twitter.com/AleiahMann, http://www.twitter.com/BluVexen, http://www.twitter.com/JannaDbunny/status/989475592486567937, http://www.twitter.com/LittleMissMid/status/989495078140854272, http://www.twitter.com/bahirasmithh, http://www.twitter.com/despairprincex/status/988205461085261825, http://www.twitter.com/foreignslum/status/993346681767976960, http://www.twitter.com/i/directory/profiles, http://www.twitter.com/i/directory/profiles/27c87c595407ef3ae9198551f5266672, http://www.twitter.com/i/directory/profiles/29215a8185a1ce94a530cb5df92fc073, http://www.twitter.com/i/directory/profiles/72d0ed7ab0442ac6145e31b09defa316, http://www.twitter.com/itsazzaleaa, http://www.twitter.com/personalization, http://www.twitter.com/settings/personalization, http://www.twitter.com/settings/your_twitter_data, https://t.co/ZObJOAXNBX, https://twitter.com/nectarestudio, https://www.nectarestudio.com/en/terms-and-conditions/, https://www.nectarestudio.com/terminos-y-condiciones/
+'barcelona' is not indexed
+'proyecto' is in: http://www.nectarestudio.com, http://www.vlc-campus.com/
+--------------------------------------------------
+Processed Sites (16):
+	business.twitter.com              	help.twitter.com                  	marketing-dev.twitter.com         	marketing-staging.twitter.com     
+	status.twitter.com                	status.twitterstat.us             	support.twitter.com               	t.co                              
+	twitter.com                       	universidadypatrimonio.net        	www.instagram.com                 	www.linkedin.com                  
+	www.nectarestudio.com             	www.twitter.com                   	www.upv.es                        	www.vlc-campus.com                
+	
+--------------------------------------------------
+Pending Sites (80):
+	about.twitter.com                 	ads.twitter.com                   	apps.upv.es                       	berkeleyprize.org                 
+	blog.twitter.com                  	business-staging.twitter.com      	caip.webs.upv.es                  	californiaspaincampus.org         
+	careers.twitter.com               	congreso.coajaen.es               	congressartis.wordpress.com       	cultura.upv.es                    
+	dev.twitter.com                   	developer.twitter.com             	eduroam.upv.es                    	eepurl.com                        
+	engineering.twitter.com           	europa.eu                         	generacionespontanea.upv.es       	get.digits.com                    
+	get.fabric.io                     	help.pscp.tv                      	heritagesofmigration.wordpress.com	i2sysbio.uv.es                    
+	innovacion.upv.es                 	investor.twitterinc.com           	legal.twitter.com                 	m.twitter.com                     
+	marketing.twitter.com             	media.upv.es                      	menteabertaweb.wixsite.com        	mobile.twitter.com                
+	optout.aboutads.info              	pangaea.blogs.uv.es               	pbs.twimg.com                     	plus.google.com                   
+	policonsulta.upv.es               	pscp.tv                           	publishing.unesco.org             	riunet.upv.es                     
+	sede.upv.es                       	servidorvlc.uv.es                 	sostierra2017.blogs.upv.es        	support.foursquare.com            
+	twitter.ethicspointvp.com         	twittercommunity.com              	twitterflightschool.com           	universityandheritage.net         
+	web.fe.up.pt                      	wifi.upv.es                       	www.acampa.land                   	www.apr2017.org                   
+	www.calameo.com                   	www.campushabitat5u.com           	www.catedraunescoforum.upv.es     	www.chaireunescoforum.upv.es      
+	www.csic.es                       	www.dataprotection.ie             	www.educacion.es                  	www.encatc.org                    
+	www.facebook.com                  	www.forumunescochair.upv.es       	www.gandia.es                     	www.gandia.upv.es                 
+	www.google.com                    	www.info.upv.es                   	www.irun.org                      	www.jamsadr.com                   
+	www.jasarqueologia.es             	www.observatorioabaco.es          	www.privacyshield.gov             	www.pscp.tv                       
+	www.sites-vauban.org              	www.uimp.es                       	www.unesco.org                    	www.universia.es                  
+	www.upvx.es                       	www.uv.es                         	www.vives.org                     	www.youtube.com                   
+	
