@@ -75,8 +75,8 @@ def add_processed_url(url_dic, url):
         int: el docid de url dentro del diccionario
 
     """
-    # COMPLETAR
-    pass
+    url_dic[len(url_dic)] = url
+    return len(url_dic)-1
 
 def get_next_url(url_queue):
     """Extrae una url de la cola de urls url_queue y la devuelve
@@ -88,8 +88,7 @@ def get_next_url(url_queue):
         text: una url de la cola
 
     """
-    # COMPLETAR
-    pass
+    return url_queue.pop()
 
 def add_pending_url(url_queue, url, url_dic):
     """Anyade url a la cola de urls si no esta todavia en ella o en el diccionario de documentos
@@ -102,8 +101,11 @@ def add_pending_url(url_queue, url, url_dic):
         Returns:
             boolean: True si la url se ha anyadido. False si ya existia
         """
-    # COMPLETAR
-    pass
+    if((url not in url_dic.values()) and (url not in url_queue)):
+        url_queue.append(url)
+        return True
+    else:
+        return False
 
 def add_to_index(index, urlid, text):
     """Anyade el docid correscondiente a una url a las posting list de los terminos contenidos en text
@@ -114,10 +116,12 @@ def add_to_index(index, urlid, text):
             text: el texto que se debe procesar
 
         Returns:
-            int: numero de terminos procesador
+            int: numero de terminos procesados
     """
-    # COMPLETAR
-    pass
+    for word in text.split():        
+        aux = index.get(word,[]) + [urlid]
+        index[word] = list(set(aux))
+    return len(set(text.split()))
 
 def get_posting(index, dic, term):
     """Devuelve una lista con todas las urls donde aparece un termino
@@ -130,9 +134,16 @@ def get_posting(index, dic, term):
         Returns:
             list: una lista con las urls donde aparece term, None si el termino no esta en el indice invertido
     """
-    # COMPLETAR
-    pass
-
+    lista = []
+    ids = index.get(term)
+    if ids is not None:
+        for docId in ids:
+            lista.append(dic.get(docId))
+    if not lista:
+        return None
+    else:
+        return lista
+        
 
 ###############
 ## SHOW INFO ##
